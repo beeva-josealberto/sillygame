@@ -17,4 +17,4 @@ To start the game, simply execute:
 game()
 ```
 
-You will find more useful information in the [vignette](vignettes/how-to-play.html).
+You will find more useful information in the [vignette](http://htmlpreview.github.io/?https://github.com/beeva-josealberto/sillygame/blob/master/vignettes/how-to-play.html).
