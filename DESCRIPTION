@@ -11,7 +11,8 @@ Encoding: UTF-8
 LazyData: true
 Imports: glue (>= 1.2.0),
     readr (>= 1.1.1),
-    stringr (>= 1.2.0)
+    stringr (>= 1.2.0),
+    stringi (>= 1.1.6)
 Depends: R (>= 3.4.3)
 RoxygenNote: 6.0.1
 Suggests: knitr,
