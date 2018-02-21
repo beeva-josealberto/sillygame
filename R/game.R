@@ -17,6 +17,8 @@
 #' \preformatted{
 #' >> q
 #' }
+#'
+#' @export
 game <- function(){
   place <- cell
   while (place$state != "end"){
