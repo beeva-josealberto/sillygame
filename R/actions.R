@@ -3,7 +3,7 @@ explore <- function(place, object = NULL){
 }
 
 exit_game <- function(place, object = NULL){
-  icat("Saliendo del juego... ¡Adios!")
+  icat("Saliendo del juego... \\u00a1Adios!")
   return("end")
 }
 

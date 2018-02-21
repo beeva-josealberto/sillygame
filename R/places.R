@@ -20,13 +20,12 @@ cell$name <- "celda"
 
 # Set description
 cell$description <- glue::glue("
-
 -----
 CELDA
 -----
 
-Estás dentro de una celda.
-Las paredes son de piedra. El suelo de arena húmeda.
+Est\\u00e1s dentro de una celda.
+Las paredes son de piedra. El suelo de arena h\\u00fameda.
 Oyes un goteo incesante.
 Una robusta puerta de madera te observa al otro lado de la estancia.
 
@@ -40,10 +39,10 @@ cell$state <- "cell.init"
 cell$exitable <- TRUE
 cell$exit_action <- function(place){
   if (place$state == "cell.open"){
-    icat("Has escapado. ¡Enhorabuena!")
+    icat("Has escapado. \\u00a1Enhorabuena!")
     return("end")
   } else {
-    icat("La puerta está cerrada.")
+    icat("La puerta est\\u00e1 cerrada.")
   }
 }
 
@@ -54,17 +53,17 @@ cell.door <- object
 cell.door$name <- "puerta"
 cell.door$description <- glue::glue("
 Parece hecha de madera de roble.
-En la parte inferior hay un ventanuco metálico cerrado.
+En la parte inferior hay un ventanuco met\\u00e1lico cerrado.
 ")
 cell.door$openable <- TRUE
 cell.door$open_action <- function(place){
   if (place$state == "cell.init"){
-    icat("¡Has abierto la puerta! Esperaba algo más complejo...")
+    icat("\\u00a1Has abierto la puerta! Esperaba algo m\\u00e1s complejo...")
     place$state <- "cell.open"
     return("cell.open")
   }
   if (place$state == "cell.open"){
-    icat("La puerta ya está abierta")
+    icat("La puerta ya est\\u00e1 abierta")
   }
 }
 
@@ -78,7 +77,7 @@ Un ventanuco sucio y oxidado. Debe ser el sitio por donde entra la comida.
 ")
 cell.ventanuco$openable <- TRUE
 cell.ventanuco$open_action <- function(place){
-  icat("No puedo abrirlo. Está cerrado por el otro lado.")
+  icat("No puedo abrirlo. Est\\u00e1 cerrado por el otro lado.")
 }
 
 ## Add objects to cell ---------------------------------------------------------
