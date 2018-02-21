@@ -1,0 +1,19 @@
+Package: sillygame
+Type: Package
+Title: Game To Test R Package Creation
+Version: 0.0.0.9000
+Authors@R: person("Jose Alberto", "Arcos",
+    email = "josealber84@gmail.com",
+    role = c("aut", "cre"))
+Description: A silly game for R. Try to escape from the dark cell!
+License: CC0
+Encoding: UTF-8
+LazyData: true
+Imports: glue (>= 1.2.0),
+    readr (>= 1.1.1)
+Depends: R (>= 3.4.3)
+RoxygenNote: 6.0.1
+Suggests: knitr,
+    rmarkdown,
+    testthat
+VignetteBuilder: knitr
